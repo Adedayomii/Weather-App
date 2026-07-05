@@ -27,7 +27,7 @@ export function Weather () {
   function sendLocation () {
     const API_KEY = import.meta.env.VITE_WEATHER_API_KEY;
     const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}
-                  &appid=${API_KEY}&units=metric`;
+                  &appid=${import.meta.env.VITE_API_KEY}&units=metric`;
 
     axios.get(url).then((response)=>{
       setData(response.data);
@@ -56,7 +56,7 @@ export function Weather () {
             </button>
           </div>
         </div>
-        
+
         {error && <p className="error-message">{error}</p>}
 
         <div className="sunshine-container">
