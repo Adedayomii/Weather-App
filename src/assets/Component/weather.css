@@ -1,0 +1,140 @@
+.weather-app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+background: rgb(227, 216, 255);
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 350px;
+  height: 420px;
+  background: linear-gradient(
+        to bottom,
+        #4A26D7,
+        #363D9D
+    );
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  border-radius: 20px;
+  
+}
+
+/* search box container */
+.search-box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.input-box {
+  width: 200px;
+  height: 40px;
+  background-color: #E9FEFD;
+
+  border-radius: 10px;
+  border: 1px solid gray;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  padding-left: 20px;
+}
+
+.search-button-container {
+  margin-left: 20px;
+  
+}
+
+.search-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  padding-top: 7px;
+  background-color: #E9FEFD;
+}
+.searchIcon {
+  width: 20px;
+}
+
+.sunshine-container {
+  
+  margin-top: 30px;
+
+  
+}
+.sunshine {
+  width: 90px;
+  border-radius: 45px;
+  
+}
+.location-temperature {
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+.location {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 35px;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+/* humidity-windSpeed-container */
+.humidity-windSpeed-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+/* humidity-container */
+.humidity-container, .wind-speed-container {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.humidity-container {
+  margin-right: 70px;
+}
+.humidity-image-container, .windspeed-image-container {
+  margin-right: 10px;
+}
+.humidity-image, .windspeed-image {
+  width: 30px;
+}
+.humidity-volume-container {
+  display: flex;
+  flex-direction: column;
+}
+p {
+  margin: 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+.wind, .humidity {
+  font-size: 13px;
+}
+
+.error-message{
+    color: #ffb3b3;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 600;
+}
